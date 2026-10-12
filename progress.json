@@ -1,4 +1,10 @@
 {
-  "progress": {},
-  "mocks": []
+  "progress": {
+    "01_2026-10-12_tell-me-about-yourself": {
+      "confidence": "shaky",
+      "updatedAt": "2026-10-12T03:45:46.217Z"
+    }
+  },
+  "mocks": [],
+  "updatedAt": "2026-10-12T03:45:47.286Z"
 }
