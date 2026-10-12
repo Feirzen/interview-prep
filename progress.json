@@ -1,8 +1,8 @@
 {
   "progress": {
     "01_2026-10-12_tell-me-about-yourself": {
-      "confidence": "solid",
-      "updatedAt": "2026-10-12T03:52:42.866Z",
+      "confidence": null,
+      "updatedAt": "2026-10-12T03:52:54.798Z",
       "note": "",
       "listened": false,
       "practiced": false
@@ -14,5 +14,5 @@
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-12T03:52:43.936Z"
+  "updatedAt": "2026-10-12T03:52:55.830Z"
 }
