@@ -3,8 +3,12 @@
     "01_2026-10-12_tell-me-about-yourself": {
       "confidence": "shaky",
       "updatedAt": "2026-10-12T03:45:46.217Z"
+    },
+    "03_2026-10-14_why-caa": {
+      "listened": true,
+      "updatedAt": "2026-10-12T03:45:53.623Z"
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-12T03:45:47.286Z"
+  "updatedAt": "2026-10-12T03:45:54.696Z"
 }
