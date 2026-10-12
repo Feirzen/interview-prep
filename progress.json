@@ -1,9 +1,11 @@
 {
   "progress": {
     "01_2026-10-12_tell-me-about-yourself": {
-      "confidence": null,
-      "updatedAt": "2026-10-12T03:52:10.479Z",
-      "note": ""
+      "confidence": "solid",
+      "updatedAt": "2026-10-12T03:52:33.594Z",
+      "note": "",
+      "listened": true,
+      "practiced": true
     },
     "03_2026-10-14_why-caa": {
       "listened": false,
@@ -12,5 +14,5 @@
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-12T03:52:15.185Z"
+  "updatedAt": "2026-10-12T03:52:34.770Z"
 }
