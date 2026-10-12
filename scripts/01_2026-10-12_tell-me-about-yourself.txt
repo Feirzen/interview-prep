@@ -1,0 +1,39 @@
+TITLE: Day 1 · Start here + Tell me about yourself
+DATE: 2026-10-12
+TYPE: Practice
+SPEED 1.0
+
+COACH: Hey Steven. Welcome to day one. Twelve days until Emory, and this is the track that starts it all.
+COACH: Quick setup, and then we get to work. I'm your coach. I'll explain things, give you frameworks, and point out what's strong in your application. My partner here is your proctor. When he talks, he's the interviewer, and it's your turn to answer out loud.
+PROCTOR: That's me. I'll ask, you'll hear a chime, and that's your cue. Talk until you hear the second chime.
+COACH: Out loud matters. Saying it in your head feels finished when it isn't. Mumbling in the car counts. Walking the dog counts. Just say it.
+COACH: Today is the most common opener in every health professions interview: tell me about yourself. At Emory, it might come in a breakout with two or three faculty, or someone might ask it casually during the tour. Either way, it sets the tone for everything after it.
+COACH: Here's the trap. Most people either recite their resume in order, or they tell their whole life story starting in grade school. Neither one works. What works is a short arc with a point. The interviewer should finish your answer knowing who you are right now, the one thread that ties your experiences together, and why that thread leads to this program.
+COACH: So we're not writing a script. We're building beats. Four of them, in order. If you know the beats, you can say it a dozen different ways and it never sounds memorized.
+COACH: Beat one. Who you are right now. One or two sentences. You're finishing exercise science at B Y U. You work as a scribe and medical assistant for a behavioral health startup in Orem. And you volunteer as a Spanish medical interpreter at a community clinic in Midvale. That's it. Present tense. No dates.
+COACH: Beat two. The moment. This is your hook, and you already have a great one. The heart transplant you observed. You held a still-warm human heart, and then you spent the rest of the case at the head of the bed, and you realized there were two jobs happening at once. The surgeons replacing the heart, and anesthesia keeping the patient alive while they did it. Keep this to two or three sentences. Don't describe gore. Describe the realization.
+COACH: Beat three. The thread. This is what makes your answer different from the other seven people in your session. Your thread is responsibility for people who can't care for themselves or speak for themselves. Caring for a quadriplegic client whose whole morning routine was a safety sequence. Interpreting, where you are literally someone's voice. Behavioral health and detox, where patients often can't advocate for themselves. Name the thread out loud, and give two quick examples. Not all of them.
+COACH: Beat four. Why this, why now. You found the C A A role, you shadowed in Utah, and you watched a C A A carry that responsibility completely, with an anesthesiologist backing her up. The anesthetized patient is the extreme version of the thread. That's where you want to be. End there. Don't trail off. A clean ending sounds confident.
+COACH: Total length, about a minute and a half. Under two, always.
+COACH: Here's what a sample might sound like. Listen to the shape, not the exact words.
+COACH: "I'm Steven. I'm finishing my exercise science degree at B Y U, and right now I work as a scribe and medical assistant for a behavioral health startup in Orem, and I volunteer as a Spanish interpreter at a community clinic in Midvale. I picked up my Spanish on a two-year mission in Ecuador."
+COACH: "Medicine really got its hooks in me when I got to observe a heart transplant. I ended up at the head of the bed for most of it, and what stuck with me was that there were two jobs happening at once. The surgeons were replacing the heart, and anesthesia was keeping the patient alive while they did it."
+COACH: "Looking back, most of what I've done since has been some version of taking responsibility for people who can't fully take care of themselves. I was a caregiver for a quadriplegic client. I interpret for patients who can't communicate with their doctor. I work with detox patients who aren't always in a place to speak for themselves."
+COACH: "When I found the C A A role and started shadowing, it clicked. An anesthetized patient is the most complete version of that. So that's what brought me here."
+COACH: Notice what that did. Present, moment, thread, destination. No G P A. No list of activities. They have your application. This is the story that makes the application make sense.
+COACH: Your turn. First pass. Don't worry about being perfect. Just hit the four beats.
+PROCTOR: So, to get us started. Tell me a little about yourself.
+PAUSE 90
+COACH: How'd that feel? Quick check. Did you start with who you are now, not with your childhood? Did you name the thread out loud, in actual words, like responsibility for people who can't care for themselves? And did you stop cleanly, or did you trail off with something like, "so yeah, that's kind of me"? If you trailed off, that's the most common fix. Land on the destination and stop talking.
+COACH: Now, the same question comes in disguises. Interviewers like to rephrase it, partly on purpose, to see if you're reciting. Same beats, different door. Here's one.
+PROCTOR: Walk me through how you got to this point. How did you end up applying to anesthesiologist assistant programs?
+PAUSE 90
+COACH: For that version, you can lean harder on beat four. They're asking about the path, so give a little more on how you discovered the role. Your brother-in-law is an anesthesiologist, so the care team idea was in your life before you ever pursued it. Then you shadowed, and you saw it firsthand. Keep the thread. Just let the path take more of the time.
+COACH: One more disguise, and this one trips people up.
+PROCTOR: Tell me something about yourself that isn't in your application.
+PAUSE 60
+COACH: Good options for you here. You're married, and you and your wife are excited about a move east. You teach a youth Sunday school class, and you run it with questions instead of lectures. You play music. Any of those works. The goal is to show you're a real person who would be good to sit next to in class for twenty-seven months. Keep it to thirty seconds, and if you can, tie it back lightly. For example, teaching teenagers with questions has made you better at explaining things simply, which is exactly what you'll do with nervous patients.
+COACH: Last drill for today. The thirty-second version. Sometimes a student or a faculty member asks it in the hallway or over refreshments, and two minutes would be too much. Compress it. One sentence per beat.
+PROCTOR: Hey, nice to meet you. So what's your story?
+PAUSE 40
+COACH: That's day one. Here's your homework, and it's light. Say the four beats out loud one more time today, maybe while you're driving. Present. Moment. Thread. Destination. Tomorrow is a listening day. You'll hear the history of the C A A profession and how the care team model actually works, so you can talk about it like an insider. See you then.

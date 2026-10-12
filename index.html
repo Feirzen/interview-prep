@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en" data-theme="midnight">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Interview Prep Tracks</title>
+<meta name="description" content="Daily audio prep tracks for CAA interviews, with progress and confidence tracking.">
+<meta id="themeColorMeta" name="theme-color" content="#0f181c">
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Prep Tracks">
+<meta property="og:title" content="Interview Prep Tracks">
+<meta property="og:description" content="Daily audio prep for CAA interviews.">
+<meta property="og:image" content="https://feirzen.github.io/interview-prep/icons/og-image.png">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="styles.css">
+<script>try{var t=JSON.parse(localStorage.getItem("ipt-settings")||"{}").theme;if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="topline">
+      <div class="brand"><img src="icons/icon-192.png" alt="" width="28" height="28"><span class="eyebrow">CAA interviews · 2026</span></div>
+      <div class="tools">
+        <button class="iconbtn" id="syncBtn" type="button" title="Sync settings" aria-label="Sync settings"><span id="syncDot" class="syncdot"></span>Sync</button>
+        <button class="iconbtn" id="themeBtn" type="button" title="Theme" aria-label="Theme" aria-expanded="false">
+          <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 3a9 9 0 0 0 0 18c1.1 0 1.7-.8 1.7-1.6 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.9.7-1.6 1.6-1.6H16a5 5 0 0 0 5-5c0-4.2-4-7.6-9-7.6Zm-5.5 9A1.5 1.5 0 1 1 8 10.5 1.5 1.5 0 0 1 6.5 12Zm3-4A1.5 1.5 0 1 1 11 6.5 1.5 1.5 0 0 1 9.5 8Zm5 0A1.5 1.5 0 1 1 16 6.5 1.5 1.5 0 0 1 14.5 8Zm3 4a1.5 1.5 0 1 1 1.5-1.5 1.5 1.5 0 0 1-1.5 1.5Z"/></svg>
+        </button>
+      </div>
+      <div class="thememenu" id="themeMenu" hidden></div>
+    </div>
+    <h1>Interview Prep Tracks</h1>
+    <div class="countdowns" id="countdowns"></div>
+  </header>
+
+  <section class="sync" id="syncPanel" hidden>
+    <h2>Save progress to GitHub</h2>
+    <p>Your marks save on this device right away. Add a GitHub token and they also save to your <span class="mono">interview-prep</span> repo, so your phone, laptop, and the widget all stay in sync.</p>
+    <ol>
+      <li>Open <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub → New fine-grained token</a>.</li>
+      <li>Name it <b>interview-prep</b>. Set expiration to 90 days.</li>
+      <li>Under <b>Repository access</b>, pick <b>Only select repositories</b>, then choose <b>interview-prep</b>.</li>
+      <li>Under <b>Permissions → Repository permissions</b>, set <b>Contents</b> to <b>Read and write</b>.</li>
+      <li>Click <b>Generate token</b>, copy it, and paste it below.</li>
+    </ol>
+    <label for="tokenInput" class="lbl">GitHub token</label>
+    <div class="tokenrow">
+      <input id="tokenInput" type="password" autocomplete="off" placeholder="github_pat_…">
+      <button type="button" id="tokenSave">Save</button>
+    </div>
+    <div class="tokenrow">
+      <button type="button" id="tokenClear" class="ghost">Remove token</button>
+      <span class="note" id="syncStatus"></span>
+    </div>
+    <p class="note">The token stays in this browser only. It never goes into the repo.</p>
+  </section>
+
+  <section class="today" id="today" aria-live="polite"><div class="eyebrow">Loading tracks…</div></section>
+
+  <section class="summary" aria-label="Progress">
+    <div class="meta"><h2 class="small">Progress</h2><span id="sumtext"></span></div>
+    <div class="lights" id="lights"></div>
+    <div class="legend">
+      <span style="--c:var(--solid)">Solid</span>
+      <span style="--c:var(--okay)">Okay</span>
+      <span style="--c:var(--shaky)">Shaky</span>
+      <span style="--c:var(--line)">Not rated</span>
+    </div>
+  </section>
+
+  <section>
+    <div class="eyebrow" style="margin-bottom:8px">Schedule · one track a day</div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <details class="drawer">
+    <summary>Mock interview log</summary>
+    <div class="inner">
+      <form class="form" id="mockform">
+        <input id="m-date" type="date" aria-label="Date">
+        <input id="m-who" type="text" placeholder="With who? (Ri, a friend, Claude)" aria-label="Partner">
+        <select id="m-feel" aria-label="How it felt" class="full">
+          <option value="okay">How did it feel? Okay</option>
+          <option value="shaky">Shaky</option>
+          <option value="solid">Solid</option>
+        </select>
+        <textarea id="m-note" class="full" placeholder="What went well, what to fix"></textarea>
+        <button type="submit" class="full">Log mock</button>
+      </form>
+      <div id="mocks"></div>
+    </div>
+  </details>
+
+  <details class="drawer">
+    <summary>Cheat sheet: tell me about yourself</summary>
+    <div class="inner">
+      <ol>
+        <li><b>Present.</b> BYU exercise science, scribe/MA at a behavioral health startup, Spanish interpreter in Midvale.</li>
+        <li><b>Moment.</b> Heart transplant: two jobs at once, surgeons replacing the heart, anesthesia keeping the patient alive.</li>
+        <li><b>Thread.</b> Responsibility for people who can't care for or speak for themselves. Caregiver, interpreter, detox.</li>
+        <li><b>Destination.</b> Shadowed CAAs, saw that responsibility at its most complete, with an anesthesiologist backing her up.</li>
+      </ol>
+      <div class="note">About 90 seconds. Under two minutes, always. Land on the destination and stop.</div>
+    </div>
+  </details>
+
+  <details class="drawer">
+    <summary>Cheat sheet: story bank</summary>
+    <div class="inner" id="stories"></div>
+  </details>
+
+  <details class="drawer">
+    <summary>Cheat sheet: interview day</summary>
+    <div class="inner">
+      <ul>
+        <li><b>Emory · Fri Oct 23.</b> 57 Executive Park South, Suite 300. Not main campus on Clifton Rd. Check in 11:45 ET, no earlier than 11:35. Free parking. Business attire. Up to 3 hours, 8 candidates.</li>
+        <li><b>Day includes:</b> info session, interview breakouts, group Q&amp;A, student Q&amp;A, tour, refreshments. All of it counts.</li>
+        <li><b>Ask faculty:</b> How are final-year out-of-town rotations assigned? What do students who thrive in year one do differently? How is sim used across the program? Where do grads end up?</li>
+        <li><b>Ask students:</b> Normal first-semester week? Where do people live, how's the commute? What surprised you? What do you wish you'd done the summer before?</li>
+        <li><b>Your numbers vs their class:</b> GPA 3.94 vs 3.75 avg. GRE Q 161 vs 159.2 avg.</li>
+        <li><b>Don't use:</b> the propranolol hold detail. Describe the Aug 31 cases as lumpectomies with sentinel node biopsy.</li>
+        <li><b>Savannah · Fri Nov 6.</b> Report 8:00 AM, 709 Mall Blvd. Full day, includes Memorial Health and a downtown tour. Tracks for this come next.</li>
+      </ul>
+    </div>
+  </details>
+
+  <details class="drawer">
+    <summary>Home screen widget</summary>
+    <div class="inner">
+      <p>A Scriptable widget shows today's track, your lights, and the countdown. Setup steps are in the repo's <a href="https://github.com/Feirzen/interview-prep#home-screen-widget" target="_blank" rel="noopener">README</a>.</p>
+    </div>
+  </details>
+</div>
+<div class="toast" id="toast" role="status" hidden></div>
+<script src="app.js"></script>
+</body>
+</html>

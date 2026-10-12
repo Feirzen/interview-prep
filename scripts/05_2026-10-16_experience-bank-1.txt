@@ -1,0 +1,42 @@
+TITLE: Day 5 · Experience bank, part 1
+DATE: 2026-10-16
+TYPE: Practice
+SPEED 1.0
+
+COACH: Day five. Today we start your experience bank. You built six stories for CASPer, and they're good. The job now is making them interview-shaped, because an interview is different from CASPer in one big way. In an interview, every story needs to land on why it makes you a good future C A A.
+COACH: Here's the structure for every story. Four parts. Situation, in one or two sentences. Don't over-set the scene. What you did, which gets most of your time, and should be specific actions, in order. What happened as a result. And then the bridge, one sentence connecting it to anesthesia or to the program. The bridge is the part most applicants skip, and it's the part that makes interviewers write things down.
+COACH: Target about ninety seconds per story. If you're over two minutes, you're telling them what the room looked like.
+COACH: Today: three stories. The no-show phone call, the baptism disagreement, and the software crisis.
+COACH: Story one. The no-show phone call. This is your empathy story.
+COACH: Quick recap. As a scribe, you called a patient who'd skipped his appointment. The second he picked up, you could tell from his tone that he wasn't okay. Instead of accepting the surface excuse, you drew out what was really going on. Then you reflected his own feelings back to him. The same feelings making him want to skip were exactly why the appointment mattered. And you left the choice with him.
+COACH: What's great about it. You noticed something small, his tone. You didn't take the easy answer. And you didn't pressure him. That last part matters a lot. Leaving the choice with him is patient autonomy, which is the core of informed consent.
+COACH: What to tighten. Say one concrete thing you actually said to him. Even a paraphrase. Something like, "I told him that the way he was feeling right then was exactly why it was worth showing up." Interviewers remember quotes. And have a result. Did he reschedule? Did he come in? If you don't know, say what you learned instead.
+COACH: The bridge. A pre-op interview is a short conversation with a scared person, where you have to pick up on what they're not saying. Anxiety, a history they forgot to mention, a language barrier. Reading someone fast and accurately is a pre-op skill.
+COACH: Story two. The baptism disagreement. This is your conflict and cross-cultural story, and it's one of your best.
+COACH: Recap. Your mission companion rescheduled and extended invitations without consulting you, against what you'd agreed on. You didn't correct him in front of anyone. You waited until you were alone, and you led with curiosity. You asked about his thinking instead of accusing him. He connected his view to growing up in the church in Peru, which was a completely different experience from yours. Understanding that didn't change your position, but it changed how you worked together from then on.
+COACH: Why it's strong. Private, not public. Curiosity before judgment. And you didn't cave. You held your position and still built a better relationship. That's mature.
+COACH: Here's the upgrade that will make it great for anesthesia. Add one line about when you would not wait for privacy. In an O R, a safety concern gets raised right then, in the moment, out loud. A difference in working style waits for a private conversation. Something like: "If it had been a safety issue, I would have said something right there. Since it was about how we worked together, I waited until we could talk alone." That one line shows you understand how an operating room works. It also lines up with what a C A A told you in July: escalate early, even if it feels annoying.
+COACH: The bridge. In the care team you'll work with anesthesiologists, surgeons, nurses, and C R N As, from every kind of background. Sometimes you'll disagree. You know how to handle that without damaging the team.
+COACH: Story three. The software crisis. This is your adaptability and initiative story.
+COACH: Recap. One morning, a forced update locked your whole team out of your documentation tool, with sixty patient notes due. You noticed the browser version still worked. You had coworkers handle prep so the day kept moving. You rebuilt the templates for the online tool and migrated every note. It's been the standard setup ever since.
+COACH: Why it's strong. It has everything. Pressure, a real deadline, a creative fix, delegation, and a lasting result. Facility-wide adoption is concrete proof.
+COACH: What to tighten. Order matters here. First you kept the clinic running, then you fixed the system. Say it in that order, because that's the right priority. Patients first, infrastructure second. And keep the technical details light. They don't need to know the software's name.
+COACH: The bridge. Equipment fails in the O R. A pump alarms, a monitor drops out, a machine won't cooperate. The skill is the same. Keep the patient safe and the case moving first, and fix the system second. Delegating parts of it is part of that skill.
+COACH: Now let's practice. The proctor won't tell you which story to use. Your job is to pick the right one fast. For these three, the match is pretty clear.
+PROCTOR: Tell me about a time you connected with a patient who was struggling.
+PAUSE 90
+COACH: That's story one, the phone call. Check: did you include the moment you noticed his tone? Did you quote yourself, even roughly? Did you leave the choice with him, and say that out loud? And did you bridge to the pre-op conversation?
+PROCTOR: Tell me about a time you disagreed with someone you worked closely with. How did you handle it?
+PAUSE 90
+COACH: Story two. Check: did you add the safety line, the part about when you would speak up right away? That's the upgrade. Did you say what you learned about his background, without making him sound wrong? And did you say you held your position? That matters. They don't want someone who caves.
+PROCTOR: Tell me about a time something went wrong and you had to adapt quickly.
+PAUSE 90
+COACH: Story three. Check: did you keep the clinic running first, then fix the system? Did you say you delegated? And did you end on the result, that it became the standard? That's your proof.
+COACH: Now a twist. Same stories, different questions. This is the real skill. Interviewers ask in a hundred ways, and your stories stretch. Just pick the closest one.
+PROCTOR: Tell me about a time you worked with someone from a very different background than yours.
+PAUSE 75
+COACH: Best fit is story two, the companion from Peru. This time, put the cross-cultural part in the spotlight. Less about the conflict, more about what you learned from understanding where he came from. You could also use interpreting, which is cross-cultural every single shift.
+PROCTOR: Describe a time you showed leadership without having a formal title.
+PAUSE 75
+COACH: Story three works well. Nobody made you the lead that morning. You saw the fix and organized people around it. That's leadership without a title. Point that out.
+COACH: Day five, done. You've got three stories in shape. Tomorrow: the other three, plus a speed drill where you match stories to questions on the fly.

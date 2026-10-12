@@ -1,0 +1,35 @@
+TITLE: Day 10 · Curveballs, ethics, and scenarios
+DATE: 2026-10-21
+TYPE: Practice
+SPEED 1.0
+
+COACH: Day ten. Curveballs. These are the questions you can't fully prepare for, so instead of answers, we'll practice a way of thinking that works for any of them.
+COACH: Here's the framework for scenario and ethics questions. Five steps, and you say them out loud as you go, because the interviewer is grading your reasoning, not just your final answer.
+COACH: One. Patient safety first. Ask yourself whether anyone is in danger right now. If yes, that comes before everything else. Two. Get the facts. Don't assume. There may be something you don't know. Three. Use the right channel. In the care team, concerns go to the anesthesiologist, then up the chain if needed. Four. Think about everyone involved, including the person you're worried about. Be fair to them. Five. Act, and follow up.
+COACH: You don't need to name the steps. Just let them shape your answer. And one more tip. It's completely fine to pause for a few seconds before answering. A thoughtful pause looks good. Rushing into a scenario looks bad.
+COACH: Let's go.
+PROCTOR: You're a C A A student. Before a case, you notice a classmate seems off, and you think you smell alcohol on their breath. What do you do?
+PAUSE 75
+COACH: Strong answer: patient safety comes first, so that classmate shouldn't be taking care of a patient right now. You'd talk to them privately, right away if you can. But if they're about to go into a case, you go straight to the supervising anesthesiologist or your clinical coordinator, because you don't have time to wait. You do it without accusing, sticking to what you observed. And you'd also care about your classmate. Impairment can mean someone's struggling, and programs have resources to help. Safety first, then compassion. Not one or the other.
+PROCTOR: Your supervising anesthesiologist asks you to do something during a case that you believe is unsafe. What do you do?
+PAUSE 75
+COACH: Speak up, right then, respectfully and clearly. Something like: "I'm concerned about this. Can we talk through it?" Most of the time, there's a reason you don't know about, and you'll learn something. That's step two, get the facts. If you still believe it's unsafe for the patient, you don't do it, and you escalate. But your tone is collaborative, not defiant. You can mention the airway story too. When the concern is just a difference in judgment, like Karissa's, you defer. When it's a real safety issue, you speak up. Knowing the difference is the skill.
+PROCTOR: During a case, you realize you gave a medication at the wrong time. Nobody noticed, and the patient seems fine. What do you do?
+PAUSE 75
+COACH: Tell your anesthesiologist immediately. Then monitor the patient for any effects, document it honestly, and report it through the hospital's system. Here's the line that makes this answer yours: it's story six. You learned with two hundred dollars that when something doesn't add up, you report it the minute you know. Reporting errors is how the whole system gets safer. Hiding them is how patients get hurt.
+PROCTOR: A Spanish-speaking patient is about to sign an anesthesia consent form. There's no interpreter. A nurse says the patient's teenage son can just translate. What do you think?
+PAUSE 75
+COACH: This one is your home turf, so if you get anything like it, be confident. Using a family member, especially a minor, isn't appropriate for consent. They might not know medical terms, they might filter bad news, and it puts the kid in an unfair position. The right move is a qualified interpreter, in person or by phone or video, which hospitals are required to provide. Then you can add what you've actually seen as an interpreter. Patients nod along when they don't understand. That's dangerous in a pre-op conversation. And if they ask whether you'd interpret yourself as a C A A, say your Spanish helps you connect and catch things, but for formal consent you'd follow the hospital's interpreter policy.
+PROCTOR: How do you handle stress?
+PAUSE 60
+COACH: Be specific and real. What do you actually do? Exercise, which fits your degree. Time with your wife. Your faith. Music. And also how you handle stress in the moment, not just after. Under pressure, you break the problem down to what's certain and act on that, which is story five. That's a great answer, because it covers both. Recovering after, and functioning during.
+PROCTOR: This program is twenty-seven months straight, with almost no breaks, and you won't be able to work. How are you preparing for that?
+PAUSE 60
+COACH: Show them you know what you're getting into. You talked to C A As about it, and they told you that you can't work during the program, and there are basically no breaks. You and your wife have planned for it financially, and she's fully on board. You've kept a three point nine four while working clinically, so a heavy load isn't new to you. And say you're looking forward to it, not just bracing for it.
+PROCTOR: What will you do if you're not accepted this year?
+PAUSE 60
+COACH: Calm and committed. You'd ask for feedback, strengthen whatever was weakest, keep working clinically, get more shadowing, and reapply. The key message: this is what you want to do, and one cycle doesn't change that. Don't mention P A as a backup. You're only applying to C A A, so own that.
+PROCTOR: Last one. How do you think C A As and C R N As should work together?
+PAUSE 60
+COACH: Respectful and team-focused. Inside the care team, C A As and C R N As do the same work and relieve each other, and research shows the same outcomes. You'd want to learn from experienced C R N As, just like from anyone else. Don't wade into the politics. If they push, say you'd rather focus on being great at your job, and that the patient doesn't care which letters are on your badge. They care that you're paying attention.
+COACH: Day ten, done. Here's the big idea. For any curveball, think out loud, put safety first, use the right channel, and be fair to everyone. If you do that, you can't really get one wrong. Tomorrow is the full mock interview. Wear something that's not pajamas, if you can. It helps.
