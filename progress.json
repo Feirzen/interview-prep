@@ -6,9 +6,10 @@
     },
     "03_2026-10-14_why-caa": {
       "listened": true,
-      "updatedAt": "2026-10-12T03:45:53.623Z"
+      "updatedAt": "2026-10-12T03:46:05.565Z",
+      "confidence": "okay"
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-12T03:45:54.696Z"
+  "updatedAt": "2026-10-12T03:46:06.616Z"
 }
