@@ -15,8 +15,9 @@
     },
     "02_2026-10-13_the-caa-profession": {
       "listened": true,
-      "updatedAt": "2026-10-15T21:25:32.086Z",
-      "practiced": true
+      "updatedAt": "2026-10-15T22:05:11.323Z",
+      "practiced": true,
+      "confidence": "solid"
     },
     "04_2026-10-15_emory-the-program": {
       "listened": true,
@@ -24,5 +25,5 @@
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-15T21:36:18.842Z"
+  "updatedAt": "2026-10-15T22:05:12.157Z"
 }
