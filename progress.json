@@ -9,8 +9,8 @@
     },
     "03_2026-10-14_why-caa": {
       "listened": true,
-      "updatedAt": "2026-10-15T21:25:26.017Z",
-      "confidence": null,
+      "updatedAt": "2026-10-15T22:05:17.144Z",
+      "confidence": "okay",
       "practiced": true
     },
     "02_2026-10-13_the-caa-profession": {
@@ -25,5 +25,5 @@
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-15T22:05:12.157Z"
+  "updatedAt": "2026-10-15T22:05:18.573Z"
 }
