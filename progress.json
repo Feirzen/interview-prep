@@ -21,10 +21,11 @@
     },
     "04_2026-10-15_emory-the-program": {
       "listened": true,
-      "updatedAt": "2026-10-15T22:05:20.241Z",
-      "confidence": "okay"
+      "updatedAt": "2026-10-15T22:05:35.729Z",
+      "confidence": "okay",
+      "practiced": true
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-15T22:05:21.603Z"
+  "updatedAt": "2026-10-15T22:05:37.053Z"
 }
