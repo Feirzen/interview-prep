@@ -9,10 +9,11 @@
     },
     "03_2026-10-14_why-caa": {
       "listened": true,
-      "updatedAt": "2026-10-15T21:25:23.275Z",
-      "confidence": null
+      "updatedAt": "2026-10-15T21:25:26.017Z",
+      "confidence": null,
+      "practiced": true
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-15T21:25:24.434Z"
+  "updatedAt": "2026-10-15T21:25:27.216Z"
 }
