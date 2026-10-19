@@ -27,8 +27,9 @@
     },
     "05_2026-10-16_experience-bank-1": {
       "listened": true,
-      "updatedAt": "2026-10-19T16:17:08.716Z",
-      "practiced": true
+      "updatedAt": "2026-10-19T16:28:55.250Z",
+      "practiced": true,
+      "confidence": "okay"
     },
     "06_2026-10-17_experience-bank-2": {
       "listened": true,
@@ -37,5 +38,5 @@
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-19T16:28:50.074Z"
+  "updatedAt": "2026-10-19T16:28:56.643Z"
 }
