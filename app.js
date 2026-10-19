@@ -67,7 +67,8 @@ function bumpChameleon() { if (settings.theme === "chameleon") applyTheme(true);
 function drawThemeMenu() {
   $("#themeMenu").innerHTML = Object.entries(THEMES).map(([k, t]) =>
     `<button type="button" data-theme-pick="${k}" class="${settings.theme === k ? "sel" : ""}"><span class="sw" style="background:${t.swatch}"></span>${t.label}</button>`).join("")
-    + (settings.theme === "chameleon" ? `<button type="button" data-theme-pick="chameleon">↻ New colors</button><div class="hint">Colors also change each time you mark a track.</div>` : "");
+    + (settings.theme === "chameleon" ? `<button type="button" data-theme-pick="chameleon">↻ New colors</button><div class="hint">Colors also change each time you mark a track.</div>` : "")
+    + (window.Kit ? `<button type="button" data-flag style="border-top:1px solid rgba(128,128,128,.25);margin-top:4px">⚑ Raise a flag</button>` : "");
 }
 
 /* ---------------- helpers ---------------- */
@@ -247,6 +248,7 @@ document.addEventListener("click", e => {
   if (s) { const id = s.dataset.script, box = document.getElementById("sc-" + id), tr = TRACKS.find(t => t.id === id);
     if (box.hidden) { box.innerHTML = scriptHTML(tr); box.hidden = false; s.textContent = "Hide script"; } else { box.hidden = true; s.textContent = "Show script"; } return; }
   const tp = e.target.closest("[data-theme-pick]");
+  if (e.target.closest("[data-flag]")) { $("#themeMenu").hidden = true; if (window.Kit) Kit.flag.menu(); return; }
   if (tp) { settings.theme = tp.dataset.themePick; ls.set("ipt-settings", settings); applyTheme(); drawThemeMenu(); return; }
   if (e.target.closest("#themeBtn")) { const m = $("#themeMenu"); m.hidden = !m.hidden; $("#themeBtn").setAttribute("aria-expanded", String(!m.hidden)); drawThemeMenu(); return; }
   if (!e.target.closest("#themeMenu")) $("#themeMenu").hidden = true;
