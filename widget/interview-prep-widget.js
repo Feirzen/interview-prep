@@ -10,6 +10,7 @@ const SCRIPT_NAME = "Interview Prep";
 const KEY = "interview-prep-token";
 const EVENTS = [
   { name: "Emory", at: new Date("2026-10-23T15:45:00Z") },
+  { name: "UNM", at: new Date("2026-10-28T14:30:00Z") },
   { name: "Savannah", at: new Date("2026-11-06T13:00:00Z") },
 ];
 const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/progress.json`;

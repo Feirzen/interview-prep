@@ -8,7 +8,7 @@
 const OWNER = "Feirzen", REPO = "interview-prep", BRANCH = "data", FILE = "progress.json";
 const API = `https://api.github.com/repos/${OWNER}/${REPO}/contents/${FILE}`;
 const RAW = `https://raw.githubusercontent.com/${OWNER}/${REPO}/${BRANCH}/${FILE}`;
-const EVENTS = [["Emory", Date.parse("2026-10-23T15:45:00Z")], ["Savannah", Date.parse("2026-11-06T13:00:00Z")]];
+const EVENTS = [["Emory", Date.parse("2026-10-23T15:45:00Z")], ["UNM", Date.parse("2026-10-28T14:30:00Z")], ["Savannah", Date.parse("2026-11-06T13:00:00Z")]];
 
 const $ = s => document.querySelector(s);
 const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
