@@ -36,8 +36,14 @@
       "updatedAt": "2026-10-19T16:29:09.535Z",
       "practiced": true,
       "confidence": "okay"
+    },
+    "09_2026-10-20_atlanta-and-emory": {
+      "listened": true,
+      "updatedAt": "2026-10-21T15:31:44.816Z",
+      "confidence": "solid",
+      "practiced": true
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-19T22:32:03.806Z"
+  "updatedAt": "2026-10-21T15:31:45.863Z"
 }
