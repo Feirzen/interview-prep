@@ -34,10 +34,14 @@ const THEMES = {
   chameleon: { label: "Chameleon", swatch: "conic-gradient(#f87171,#fbbf24,#34d399,#38bdf8,#a78bfa,#f87171)" },
 };
 const CHAM_VARS = ["bg", "surface", "ink", "muted", "line", "accent", "accent-ink", "accent-soft", "shaky", "okay", "solid", "onlight", "shaky-soft", "okay-soft", "solid-soft"];
+let currentCham = null;
 function makeChameleon() {
+  if (settings.theme === "chameleon" && settings.chamLock && settings.chamLock.v) return settings.chamLock;
+  const tone = settings.tone || "any";
   const h = Math.floor(Math.random() * 360), acc = (h + 120 + Math.floor(Math.random() * 110)) % 360;
   const H = (x, s, l, a) => `hsl(${x} ${s}% ${l}%${a ? " / " + a + "%" : ""})`;
-  if (Math.random() < 0.28) return { scheme: "light", v: {
+  const light = tone === "light" ? true : tone === "dark" ? false : Math.random() < 0.28;
+  if (light) return { scheme: "light", v: {
     bg: H(h, 32, 95), surface: H(h, 42, 99), ink: H(h, 38, 11), muted: H(h, 14, 42), line: H(h, 22, 83),
     accent: H(acc, 66, 37), "accent-ink": "#fff", "accent-soft": H(acc, 66, 45, 13),
     shaky: "hsl(8 72% 44%)", okay: "hsl(38 80% 36%)", solid: "hsl(150 55% 30%)", onlight: "#fff",
@@ -53,7 +57,7 @@ function applyTheme(reroll) {
   const root = document.documentElement;
   root.setAttribute("data-theme", t === "chameleon" ? "midnight" : t);
   if (t === "chameleon") {
-    const p = makeChameleon();
+    const p = currentCham = makeChameleon();
     CHAM_VARS.forEach(k => root.style.setProperty("--" + k, p.v[k]));
     root.style.colorScheme = p.scheme;
   } else if (!reroll) {
@@ -63,13 +67,25 @@ function applyTheme(reroll) {
   const m = $("#themeColorMeta");
   if (m) m.setAttribute("content", getComputedStyle(document.body).backgroundColor);
 }
-function bumpChameleon() { if (settings.theme === "chameleon") applyTheme(true); }
-function drawThemeMenu() {
-  $("#themeMenu").innerHTML = Object.entries(THEMES).map(([k, t]) =>
-    `<button type="button" data-theme-pick="${k}" class="${settings.theme === k ? "sel" : ""}"><span class="sw" style="background:${t.swatch}"></span>${t.label}</button>`).join("")
-    + (settings.theme === "chameleon" ? `<button type="button" data-theme-pick="chameleon">↻ New colors</button><div class="hint">Colors also change each time you mark a track.</div>` : "")
-    + (window.Kit ? `<button type="button" data-flag style="border-top:1px solid rgba(128,128,128,.25);margin-top:4px">⚑ Raise a flag</button>` : "");
-}
+function bumpChameleon() { if (settings.theme === "chameleon" && !settings.chamLock) applyTheme(true); }
+
+/* ---------------- shared settings gear (Feirzen/flag-hub kit) ----------------
+   The gear rolls out the kit tray: Look (Paper / Midnight / Sepia / Chameleon) and Flag.
+   The app still paints its own looks; the kit is just the controls. */
+const KIT_TO_APP = { light: "paper", dark: "midnight", sepia: "sepia", chameleon: "chameleon" };
+const APP_TO_KIT = { paper: "light", midnight: "dark", sepia: "sepia", chameleon: "chameleon" };
+function saveSettings() { ls.set("ipt-settings", settings); }
+window.KitConfig = {
+  gear: "#gearBtn",
+  look: {
+    labels: { light: "Paper", dark: "Midnight" },
+    get: () => ({ theme: APP_TO_KIT[settings.theme] || "dark", tone: settings.tone || "any", locked: !!settings.chamLock }),
+    set: t => { settings.theme = KIT_TO_APP[t] || "midnight"; settings.chamLock = null; saveSettings(); applyTheme(); },
+    tone: t => { settings.tone = t; settings.chamLock = null; saveSettings(); applyTheme(true); },
+    lock: on => { settings.chamLock = on ? currentCham : null; saveSettings(); },
+    reroll: () => { if (!settings.chamLock) { settings.chamLock = null; applyTheme(true); } },
+  },
+};
 
 /* ---------------- helpers ---------------- */
 function localISO(d = new Date()) { return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`; }
@@ -247,11 +263,6 @@ document.addEventListener("click", e => {
   const s = e.target.closest("button[data-script]");
   if (s) { const id = s.dataset.script, box = document.getElementById("sc-" + id), tr = TRACKS.find(t => t.id === id);
     if (box.hidden) { box.innerHTML = scriptHTML(tr); box.hidden = false; s.textContent = "Hide script"; } else { box.hidden = true; s.textContent = "Show script"; } return; }
-  const tp = e.target.closest("[data-theme-pick]");
-  if (e.target.closest("[data-flag]")) { $("#themeMenu").hidden = true; if (window.Kit) Kit.flag.menu(); return; }
-  if (tp) { settings.theme = tp.dataset.themePick; ls.set("ipt-settings", settings); applyTheme(); drawThemeMenu(); return; }
-  if (e.target.closest("#themeBtn")) { const m = $("#themeMenu"); m.hidden = !m.hidden; $("#themeBtn").setAttribute("aria-expanded", String(!m.hidden)); drawThemeMenu(); return; }
-  if (!e.target.closest("#themeMenu")) $("#themeMenu").hidden = true;
   if (e.target.closest("#syncBtn")) { $("#syncPanel").hidden = !$("#syncPanel").hidden; return; }
 });
 document.addEventListener("change", e => { const t = e.target; if (t.matches("textarea[data-id]")) save(t.dataset.id, { note: t.value }); });
