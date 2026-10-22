@@ -50,14 +50,10 @@ header{display:flex;flex-direction:column;gap:12px}
 .brand img{border-radius:7px}
 .tools{display:flex;gap:8px}
 .iconbtn{display:inline-flex;align-items:center;gap:6px;padding:6px 11px}
+.gearbtn{padding:6px 8px}
 .syncdot{width:8px;height:8px;border-radius:50%;background:var(--line)}
 .syncdot.on{background:var(--solid)}
 .syncdot.err{background:var(--shaky)}
-.thememenu{position:absolute;right:0;top:44px;z-index:5;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:6px;display:flex;flex-direction:column;gap:2px;min-width:180px;box-shadow:0 10px 30px rgba(0,0,0,.25)}
-.thememenu button{display:flex;align-items:center;gap:10px;border:none;border-radius:8px;background:none;text-align:left;padding:8px 10px;font-weight:600}
-.thememenu button.sel{background:var(--accent-soft)}
-.thememenu .sw{width:18px;height:18px;border-radius:50%;border:1px solid var(--line);flex:none}
-.thememenu .hint{font-size:.78rem;color:var(--muted);padding:4px 10px 6px}
 
 .countdowns{display:flex;flex-wrap:wrap;gap:6px}
 .cd{display:flex;align-items:baseline;gap:6px;padding:7px 10px;border:1px solid var(--line);border-radius:10px;background:var(--surface)}
