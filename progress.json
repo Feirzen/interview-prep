@@ -60,8 +60,14 @@
       "updatedAt": "2026-10-23T05:34:25.087Z",
       "confidence": "solid",
       "listened": true
+    },
+    "11_2026-10-22_full-mock-interview": {
+      "listened": true,
+      "updatedAt": "2026-10-23T05:34:28.038Z",
+      "practiced": true,
+      "confidence": "solid"
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-23T05:34:26.260Z"
+  "updatedAt": "2026-10-23T05:34:29.181Z"
 }
