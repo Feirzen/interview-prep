@@ -54,8 +54,14 @@
       "updatedAt": "2026-10-23T05:34:21.723Z",
       "practiced": true,
       "confidence": "solid"
+    },
+    "10_2026-10-21_curveballs-and-ethics": {
+      "practiced": true,
+      "updatedAt": "2026-10-23T05:34:25.087Z",
+      "confidence": "solid",
+      "listened": true
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-23T05:34:23.026Z"
+  "updatedAt": "2026-10-23T05:34:26.260Z"
 }
