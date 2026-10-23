@@ -42,8 +42,14 @@
       "updatedAt": "2026-10-21T15:31:44.816Z",
       "confidence": "solid",
       "practiced": true
+    },
+    "07_2026-10-18_owning-it-shadowing": {
+      "listened": true,
+      "updatedAt": "2026-10-23T05:34:17.684Z",
+      "practiced": true,
+      "confidence": "solid"
     }
   },
   "mocks": [],
-  "updatedAt": "2026-10-21T15:31:45.863Z"
+  "updatedAt": "2026-10-23T05:34:18.838Z"
 }
