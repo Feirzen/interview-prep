@@ -67,6 +67,8 @@ button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);
 button.c-shaky[aria-pressed="true"]{background:var(--shaky);border-color:var(--shaky);color:var(--onlight)}
 button.c-okay[aria-pressed="true"]{background:var(--okay);border-color:var(--okay);color:var(--onlight)}
 button.c-solid[aria-pressed="true"]{background:var(--solid);border-color:var(--solid);color:var(--onlight)}
+.links{display:flex;flex-wrap:wrap;gap:16px;align-items:center}
+a.link{padding:4px 0;color:var(--accent);text-decoration:none}
 button.link{border:none;background:none;padding:4px 0;color:var(--accent)}
 textarea,input,select{font:15px var(--body);color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:8px 10px;width:100%}
 textarea{min-height:64px;resize:vertical}

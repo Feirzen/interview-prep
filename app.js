@@ -117,6 +117,8 @@ function controlsHTML(tr) {
 }
 const ICON_PLAY = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5Z"/></svg>';
 const ICON_PAUSE = '<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 5h3.5v14H7zM13.5 5H17v14h-3.5z"/></svg>';
+// Saves the mp3 to the device (Files app on iPhone/iPad) for offline listening
+const dlHTML = tr => `<a class="link" href="${esc(tr.url)}" download="${esc(tr.id)}.mp3">Download for offline</a>`;
 function renderToday() {
   const tr = pickToday(); TODAY_ID = tr.id;
   const [wd, md] = fmtDate(tr.date);
@@ -134,7 +136,8 @@ function renderToday() {
    </div>
    <audio id="todayAudio" preload="metadata" src="${esc(tr.url)}"></audio>
    ${controlsHTML(tr)}
-   <textarea data-id="${tr.id}" placeholder="Notes for your check-in (what felt weak, what to redo)"></textarea>`;
+   <textarea data-id="${tr.id}" placeholder="Notes for your check-in (what felt weak, what to redo)"></textarea>
+   <div class="links">${dlHTML(tr)}</div>`;
   wirePlayer(tr);
 }
 function wirePlayer(tr) {
@@ -176,7 +179,7 @@ function renderList() {
       <div class="state" data-state="${tr.id}"></div></summary>
       <div class="body"><audio controls preload="none" src="${esc(tr.url)}"></audio>${controlsHTML(tr)}
       <textarea data-id="${tr.id}" placeholder="Notes for your check-in"></textarea>
-      <button type="button" class="link" data-script="${tr.id}">Show script</button><div id="sc-${tr.id}" hidden></div></div></details>`;
+      <div class="links"><button type="button" class="link" data-script="${tr.id}">Show script</button>${dlHTML(tr)}</div><div id="sc-${tr.id}" hidden></div></div></details>`;
   }).join("");
 }
 function scriptHTML(tr) {
