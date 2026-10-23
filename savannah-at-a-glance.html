@@ -1,0 +1,136 @@
+<title>Savannah AA at a Glance</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: one flyer column. Big-number band up top, then short labeled blocks, then a do/don't strip. */
+:root{
+  --bg:#f6f7fb; --card:#ffffff; --fg:#14213d; --muted:#55607a;
+  --navy:#1d4d4f; --gold:#9a6b1f; --gold-soft:#f3e8d4; --line:#dde2ee;
+  --good:#1f7a4d; --bad:#a3352b;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Source Sans 3",ui-sans-serif,system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c1222; --card:#141c31; --fg:#e8ecf6; --muted:#9aa5bf;
+  --navy:#7cc4bf; --gold:#d9a75a; --gold-soft:#2b2214; --line:#26304a;
+  --good:#5cc994; --bad:#f08a7e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1222; --card:#141c31; --fg:#e8ecf6; --muted:#9aa5bf;
+  --navy:#7cc4bf; --gold:#d9a75a; --gold-soft:#2b2214; --line:#26304a;
+  --good:#5cc994; --bad:#f08a7e; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.45}
+.wrap{max-width:760px;margin:0 auto;padding-block:24px 48px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:22px}
+header{display:flex;flex-direction:column;gap:6px;border-bottom:3px solid var(--gold);padding-bottom:14px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(28px,6vw,40px);line-height:1.05;margin:0;color:var(--navy);text-wrap:balance}
+.sub{color:var(--muted);margin:0}
+.nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.nums{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.n{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:2px}
+.n b{font-family:var(--display);font-weight:800;font-size:26px;color:var(--navy);line-height:1.1;font-variant-numeric:tabular-nums}
+.n span{font-size:13px;color:var(--muted)}
+h2{font-family:var(--display);font-weight:600;font-size:20px;margin:0 0 8px;color:var(--navy)}
+section{min-width:0}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:5px}
+.hook{background:var(--gold-soft);border-left:4px solid var(--gold);padding:8px 12px;border-radius:0 8px 8px 0;margin-top:10px;font-weight:600}
+.phases{display:grid;grid-template-columns:4fr 3fr;gap:10px}
+@media (max-width:560px){.phases{grid-template-columns:1fr}}
+.ph{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+.ph h3{margin:0 0 6px;font-size:15px;font-family:var(--display);font-weight:600}
+.ph small{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+td,th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left}
+th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.me{color:var(--good);font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.two{grid-template-columns:1fr}}
+.dont h2{color:var(--bad)} .do h2{color:var(--good)}
+.foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Interview Fri Nov 6 · report 8:00 AM · full day</div>
+    <h1>South University Savannah Anesthesiologist Assistant Program</h1>
+    <p class="sub">Master of Medical Science (MMSc) in Anesthesia Science · 709 Mall Blvd, Savannah, GA · day includes Memorial Health and a downtown tour</p>
+  </header>
+
+  <div class="nums" aria-label="Key numbers">
+    <div class="n"><b>June 2027</b><span>You'd start (mid-June)</span></div>
+    <div class="n"><b>Fall 2029</b><span>You'd graduate</span></div>
+    <div class="n"><b>28 mo</b><span>9 quarters, back to back</span></div>
+    <div class="n"><b>Up to 30</b><span>Per class, one class a year</span></div>
+    <div class="n"><b>~$134k</b><span>Total cost ($13.2k per quarter plus clinical fees)</span></div>
+    <div class="n"><b>97.6%</b><span>First-time pass on the certifying exam</span></div>
+  </div>
+
+  <section>
+    <h2>How the 28 months are built</h2>
+    <div class="phases">
+      <div class="ph">
+        <h3>Early quarters · class first</h3>
+        <small>Mostly classroom and sim</small>
+        <ul>
+          <li>Runs on <b>quarters</b>, not semesters</li>
+          <li>A little OR time starts in quarter 1</li>
+          <li>Clinical hours ramp up quarter by quarter</li>
+        </ul>
+      </div>
+      <div class="ph">
+        <h3>Final year · all clinical</h3>
+        <small>About 12 months</small>
+        <ul>
+          <li>Month-long rotations, general plus subspecialties</li>
+          <li>Each one paired with a preceptor</li>
+          <li><b>2,500+ clinical hours</b> by graduation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hook">Memory hook: 9 quarters, 28 months, 30 students, 2,500 hours.</div>
+  </section>
+
+  <section>
+    <h2>Outcomes and history</h2>
+    <ul>
+      <li><b>97.6%</b> first-time pass rate · <b>94.4%</b> graduation rate (classes of 2022 to 2024)</li>
+      <li>Program started in <b>2004</b>. Savannah was South's first AA campus. Orlando and West Palm Beach came later</li>
+      <li>By 2018, South had seen an entire AA class pass the boards 11 times</li>
+      <li>Accredited by CAAHEP</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why it fits you</h2>
+    <ul>
+      <li>Georgia is a big CAA state with lots of jobs</li>
+      <li>Savannah is smaller and cheaper than Atlanta, and you and your wife both like warm weather</li>
+      <li>Fun link: Sherman's March to the Sea ended here, so it ties back to the Atlanta history you know</li>
+    </ul>
+  </section>
+
+  <div class="two">
+    <section class="dont">
+      <h2>Don't ask (it's on the site)</h2>
+      <ul>
+        <li>How long is it? When does it start?</li>
+        <li>How big is the class? What does it cost?</li>
+        <li>What's the pass rate?</li>
+        <li>Is it accredited?</li>
+      </ul>
+    </section>
+    <section class="do">
+      <h2>Do ask</h2>
+      <ul>
+        <li>How does Memorial Health fit into training, and what other sites do students rotate through?</li>
+        <li>How do you match students to final-year rotations, and do people travel?</li>
+        <li>What do students who struggle early usually have in common?</li>
+        <li><i>Students:</i> what's living in Savannah like on a student budget?</li>
+      </ul>
+    </section>
+  </div>
+
+  <p class="foot">Tuition is South's rate for quarters starting after Sept 1, 2026, and the total is from its 2026 to 27 cost sheet. The class size and start month come from a 2024 admissions packet. Check both on the day.</p>
+</div>

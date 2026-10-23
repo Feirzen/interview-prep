@@ -1,0 +1,137 @@
+<title>UNM AA at a Glance</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Layout: one flyer column. Big-number band up top, then short labeled blocks, then a do/don't strip. */
+:root{
+  --bg:#f6f7fb; --card:#ffffff; --fg:#14213d; --muted:#55607a;
+  --navy:#ba0c2f; --gold:#0f7c80; --gold-soft:#dff1f0; --line:#dde2ee;
+  --good:#1f7a4d; --bad:#a3352b;
+  --display:"Bricolage Grotesque",ui-sans-serif,system-ui,sans-serif;
+  --body:"Source Sans 3",ui-sans-serif,system-ui,sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#0c1222; --card:#141c31; --fg:#e8ecf6; --muted:#9aa5bf;
+  --navy:#ff8a9d; --gold:#5cc6c2; --gold-soft:#13292b; --line:#26304a;
+  --good:#5cc994; --bad:#f08a7e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0c1222; --card:#141c31; --fg:#e8ecf6; --muted:#9aa5bf;
+  --navy:#ff8a9d; --gold:#5cc6c2; --gold-soft:#13292b; --line:#26304a;
+  --good:#5cc994; --bad:#f08a7e; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.45}
+.wrap{max-width:760px;margin:0 auto;padding-block:24px 48px;
+  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  display:flex;flex-direction:column;gap:22px}
+header{display:flex;flex-direction:column;gap:6px;border-bottom:3px solid var(--gold);padding-bottom:14px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(28px,6vw,40px);line-height:1.05;margin:0;color:var(--navy);text-wrap:balance}
+.sub{color:var(--muted);margin:0}
+.nums{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+@media (max-width:560px){.nums{grid-template-columns:repeat(2,minmax(0,1fr))}}
+.n{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px;display:flex;flex-direction:column;gap:2px}
+.n b{font-family:var(--display);font-weight:800;font-size:26px;color:var(--navy);line-height:1.1;font-variant-numeric:tabular-nums}
+.n span{font-size:13px;color:var(--muted)}
+h2{font-family:var(--display);font-weight:600;font-size:20px;margin:0 0 8px;color:var(--navy)}
+section{min-width:0}
+ul{margin:0;padding-left:20px;display:flex;flex-direction:column;gap:5px}
+.hook{background:var(--gold-soft);border-left:4px solid var(--gold);padding:8px 12px;border-radius:0 8px 8px 0;margin-top:10px;font-weight:600}
+.phases{display:grid;grid-template-columns:4fr 3fr;gap:10px}
+@media (max-width:560px){.phases{grid-template-columns:1fr}}
+.ph{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px}
+.ph h3{margin:0 0 6px;font-size:15px;font-family:var(--display);font-weight:600}
+.ph small{display:block;color:var(--muted);font-size:13px;margin-bottom:6px}
+table{border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums}
+td,th{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left}
+th{font-size:12px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:600}
+td.me{color:var(--good);font-weight:700}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media (max-width:560px){.two{grid-template-columns:1fr}}
+.dont h2{color:var(--bad)} .do h2{color:var(--good)}
+.foot{font-size:13px;color:var(--muted);border-top:1px solid var(--line);padding-top:10px}
+</style>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Interview Wed Oct 28 · Zoom · 8:30 AM Mountain, keep 8:30 to 3:00 free</div>
+    <h1>UNM Master of Science in Anesthesia</h1>
+    <p class="sub">CAA program · UNM School of Medicine, Dept. of Anesthesiology &amp; Critical Care Medicine · Albuquerque, NM</p>
+  </header>
+
+  <div class="nums" aria-label="Key numbers">
+    <div class="n"><b>Aug 2027</b><span>You'd start</span></div>
+    <div class="n"><b>Dec 2029</b><span>You'd graduate</span></div>
+    <div class="n"><b>28 mo</b><span>7 semesters, 116 credits</span></div>
+    <div class="n"><b>~15</b><span>Per class, small on purpose</span></div>
+    <div class="n"><b>~$125k</b><span>Total tuition out of state ($98k in state), before fees</span></div>
+    <div class="n"><b>2024</b><span>First class started. Brand new program</span></div>
+  </div>
+
+  <section>
+    <h2>How the 28 months are built</h2>
+    <div class="phases">
+      <div class="ph">
+        <h3>Semesters 1 to 4 · foundation</h3>
+        <small>About 16 months</small>
+        <ul>
+          <li>Anesthesia principles, pharm, physiology</li>
+          <li>Heavy simulation. 800+ hours of classroom and sim total</li>
+          <li>3-semester equipment and monitoring series (machine, vaporizers, vents, checkout)</li>
+        </ul>
+      </div>
+      <div class="ph">
+        <h3>Semesters 5 to 7 · clinical year</h3>
+        <small>Final 12 months</small>
+        <ul>
+          <li>Year-long rotations, including outside sites</li>
+          <li>Review courses run alongside</li>
+          <li>Senior seminar on teaching skills</li>
+        </ul>
+      </div>
+    </div>
+    <div class="hook">Memory hook: 28 months, 7 semesters, 116 credits. 800 hours in class and sim, 2,200+ with patients.</div>
+  </section>
+
+  <section>
+    <h2>What makes UNM different</h2>
+    <ul>
+      <li><b>First AA program in New Mexico.</b> State approved it in 2023, first class started August 2024</li>
+      <li>That first class is finishing its clinical year right about now, so there are <b>no board pass rates yet</b></li>
+      <li>Home base is <b>UNM Hospital</b>, the state's academic medical center and only Level I trauma center</li>
+      <li>Small class means lots of faculty time and sim time per student</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Why it fits you</h2>
+    <ul>
+      <li>Close to Utah, same Mountain time, same desert West</li>
+      <li>Big Spanish-speaking population. About half of New Mexico is Hispanic, so your Spanish gets used every day</li>
+      <li>Underserved and rural patients all over the state. That's the population you've said you want</li>
+      <li>Being in an early class means you help shape the program</li>
+    </ul>
+  </section>
+
+  <div class="two">
+    <section class="dont">
+      <h2>Don't ask (it's on the site)</h2>
+      <ul>
+        <li>How long is it? How many credits?</li>
+        <li>What's tuition?</li>
+        <li>What's the pass rate? (there isn't one yet)</li>
+        <li>What does it take to apply?</li>
+      </ul>
+    </section>
+    <section class="do">
+      <h2>Do ask</h2>
+      <ul>
+        <li>What did you learn from the first class that you've changed for later ones?</li>
+        <li>Where do the outside clinical-year rotations happen, and how are they assigned?</li>
+        <li>Where are the first grads getting hired, and are New Mexico jobs opening up for CAAs?</li>
+        <li><i>Students:</i> what's it like being one of the first classes?</li>
+      </ul>
+    </section>
+  </div>
+
+  <p class="foot">Tuition is UNM's posted total for the 116-credit plan and may change. Class size is from 2024 and could be bigger now. Everything else is from UNM's MSA program pages and its summer 2025 newsletter.</p>
+</div>
