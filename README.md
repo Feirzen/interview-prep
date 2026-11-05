@@ -1,6 +1,6 @@
 # Interview Prep Tracks
 
-Daily audio prep for my CAA interviews. One track a day from Oct 12 to the Emory interview on Oct 23. UNM (Oct 28, Zoom) and Savannah (Nov 6) tracks come next.
+Daily audio prep for my CAA interviews. Twelve tracks for Emory (Oct 12 to 23, accepted!), then two for South University Savannah (Nov 5 catch-up, Nov 6 morning warm-up). `savannah.html` is the interview-day poster.
 
 Live site: https://feirzen.github.io/interview-prep/
 

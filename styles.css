@@ -148,3 +148,9 @@ audio{width:100%;height:40px}
 
 .toast{position:fixed;left:50%;bottom:calc(20px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);background:var(--ink);color:var(--bg);padding:9px 16px;border-radius:999px;font-weight:600;font-size:.9rem;z-index:10;max-width:calc(100% - 32px)}
 @media (prefers-reduced-motion:reduce){*{transition:none!important}}
+
+.posterlink{display:flex;justify-content:space-between;align-items:center;padding:12px 14px;border-radius:14px;text-decoration:none;color:var(--ink);font-weight:600;
+  background:linear-gradient(120deg,var(--accent-soft),var(--solid-soft));border:1px solid var(--line);transition:transform .25s ease,box-shadow .25s ease}
+.posterlink span{color:var(--accent);transition:transform .25s ease}
+.posterlink:hover{transform:translateY(-1px);box-shadow:0 8px 22px -14px rgba(0,0,0,.5)}
+.posterlink:hover span{transform:translateX(3px)}

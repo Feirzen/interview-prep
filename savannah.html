@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en" data-theme="midnight">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Savannah at a Glance · Interview Prep</title>
+<meta name="description" content="One-screen interview day poster for South University Savannah.">
+<meta id="themeColorMeta" name="theme-color" content="#0f181c">
+<link rel="icon" href="icons/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta property="og:title" content="Savannah at a Glance">
+<meta property="og:description" content="Interview day poster: logistics, answers, stories, questions.">
+<meta property="og:image" content="https://feirzen.github.io/interview-prep/icons/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="styles.css?v=4">
+<script>try{var t=JSON.parse(localStorage.getItem("ipt-settings")||"{}").theme;if(t&&t!=="chameleon")document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
+<style>
+  body{background:
+    radial-gradient(1200px 600px at 10% -10%, var(--accent-soft), transparent 60%),
+    radial-gradient(900px 500px at 110% 10%, var(--solid-soft), transparent 55%),
+    var(--bg);min-height:100vh}
+  .pwrap{max-width:1100px;margin:0 auto;padding:18px 16px 60px}
+  .ptop{display:flex;justify-content:space-between;align-items:center;gap:10px;margin-bottom:14px}
+  .ptop a.back{font:500 .78rem/1 var(--mono);text-decoration:none;color:var(--muted)}
+  .themes{display:flex;gap:6px}
+  .themes button{width:26px;height:26px;border-radius:50%;border:2px solid var(--line);padding:0;cursor:pointer;transition:transform .2s ease,border-color .2s ease}
+  .themes button:hover{transform:scale(1.08)}
+  .themes button[aria-pressed="true"]{border-color:var(--accent)}
+  .hero{padding:20px 20px 18px;border-radius:20px;margin-bottom:14px}
+  .hero h1{font-size:clamp(1.7rem,5vw,2.6rem)}
+  .hero .sub{color:var(--muted);margin-top:6px}
+  .chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+  .chip2{font:500 .74rem/1 var(--mono);padding:7px 10px;border-radius:999px;background:var(--accent-soft);color:var(--ink);border:1px solid var(--line)}
+  .glass{background:color-mix(in srgb, var(--surface) 72%, transparent);border:1px solid color-mix(in srgb, var(--line) 80%, transparent);
+    backdrop-filter:blur(14px) saturate(1.2);-webkit-backdrop-filter:blur(14px) saturate(1.2);box-shadow:0 10px 30px -18px rgba(0,0,0,.45)}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:12px}
+  .card{border-radius:16px;padding:16px 16px 14px;opacity:0;transform:translateY(10px);animation:rise .55s cubic-bezier(.2,.7,.2,1) forwards}
+  .card h2{font-size:1.02rem;display:flex;align-items:center;gap:8px;margin-bottom:8px}
+  .card h2 .n{font:500 .7rem/1 var(--mono);color:var(--accent-ink);background:var(--accent);border-radius:6px;padding:4px 6px}
+  .card ul,.card ol{margin:0;padding-left:18px}
+  .card li{margin:3px 0}
+  .card p{margin:4px 0}
+  .k{color:var(--accent);font-weight:600}
+  .m{color:var(--muted);font-size:.9rem}
+  .tl{list-style:none;padding:0!important}
+  .tl li{display:grid;grid-template-columns:62px 1fr;gap:8px;padding:4px 0;border-bottom:1px dashed var(--line)}
+  .tl li:last-child{border-bottom:0}
+  .tl b{font:500 .82rem/1.5 var(--mono);color:var(--accent)}
+  .beats{counter-reset:b;list-style:none;padding:0!important}
+  .beats li{counter-increment:b;position:relative;padding-left:30px}
+  .beats li::before{content:counter(b);position:absolute;left:0;top:1px;width:21px;height:21px;border-radius:50%;background:var(--accent-soft);color:var(--accent);font:500 .75rem/21px var(--mono);text-align:center}
+  .stories{display:grid;grid-template-columns:1fr;gap:6px}
+  .stories div{display:grid;grid-template-columns:118px 1fr;gap:8px;font-size:.92rem}
+  .stories b{color:var(--ink)}
+  .quote{border-left:3px solid var(--accent);padding:6px 10px;border-radius:0 8px 8px 0;background:var(--accent-soft);font-size:.94rem}
+  .warn{border-left-color:var(--shaky);background:var(--shaky-soft)}
+  .wide{grid-column:1/-1}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  @media (max-width:620px){.two{grid-template-columns:1fr}.stories div{grid-template-columns:1fr;gap:0}}
+  @keyframes rise{to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.card{animation:none;opacity:1;transform:none}}
+  @media print{
+    body{background:#fff;color:#111}.ptop{display:none}
+    .glass{background:#fff;backdrop-filter:none;box-shadow:none;border:1px solid #ccc}
+    .card{animation:none;opacity:1;transform:none;break-inside:avoid;padding:10px}
+    .pwrap{padding:0}.grid{gap:8px}body{font-size:12px}
+  }
+</style>
+</head>
+<body>
+<div class="pwrap">
+  <div class="ptop">
+    <a class="back" href="./">← Prep Tracks</a>
+    <div class="themes" role="group" aria-label="Theme">
+      <button type="button" data-t="paper" title="Paper" style="background:#eef2f3"></button>
+      <button type="button" data-t="midnight" title="Midnight" style="background:#0f181c"></button>
+      <button type="button" data-t="sepia" title="Sepia" style="background:#2a211a"></button>
+      <button type="button" data-t="chameleon" title="Chameleon" style="background:conic-gradient(#f87171,#fbbf24,#34d399,#38bdf8,#a78bfa,#f87171)"></button>
+    </div>
+  </div>
+
+  <section class="hero glass">
+    <div class="eyebrow">At a glance · Fri Nov 6, 2026</div>
+    <h1>South University Savannah</h1>
+    <div class="sub">You already got into Emory with this exact material. Same you, new room. Relaxed, curious, specific.</div>
+    <div class="chips">
+      <span class="chip2">Be there 8:00 ET (6:00 Utah)</span>
+      <span class="chip2">709 Mall Blvd</span>
+      <span class="chip2">Luggage → office</span>
+      <span class="chip2">Back on campus by 4:30</span>
+      <span class="chip2">Phone on silent</span>
+    </div>
+  </section>
+
+  <div class="grid">
+    <section class="card glass" style="animation-delay:.05s">
+      <h2><span class="n">01</span>The day</h2>
+      <ul class="tl">
+        <li><b>7:55</b><span>Mall Blvd entrance → "AA Program Interview" signs → <span class="k">immediate right</span> → visitor parking → breezeway → Health Professions Building door.</span></li>
+        <li><b>8:00</b><span>Report (later email said 8:15, so 8:00 is safe). Hand off luggage.</span></li>
+        <li><b>AM</b><span>Facilities tour, mock OR + skills lab. Interviews and Q&amp;A with director, faculty, students.</span></li>
+        <li><b>Mid</b><span>Memorial Health visit. Lunch counts.</span></li>
+        <li><b>PM</b><span>Trolley tour of historic downtown. Still counts.</span></li>
+        <li><b>4:30</b><span>Back on campus. Grab bag. Airport.</span></li>
+      </ul>
+    </section>
+
+    <section class="card glass" style="animation-delay:.1s">
+      <h2><span class="n">02</span>Tell me about yourself · ~90 sec</h2>
+      <ol class="beats">
+        <li><span class="k">Present.</span> BYU exercise science, scribe/MA at a behavioral health startup, Spanish interpreter in Midvale.</li>
+        <li><span class="k">Moment.</span> Heart transplant: two jobs at once. Surgeons replacing the heart, anesthesia keeping the patient alive.</li>
+        <li><span class="k">Thread.</span> Responsibility for people who can't care for or speak for themselves. Caregiver, interpreter, detox.</li>
+        <li><span class="k">Destination.</span> Shadowed CAAs: that responsibility at its fullest, with an anesthesiologist backing them up. Stop.</li>
+      </ol>
+    </section>
+
+    <section class="card glass" style="animation-delay:.15s">
+      <h2><span class="n">03</span>Why South Savannah</h2>
+      <p><span class="k">Program.</span> OR in quarter 1. Recorded sim debriefs in a mock OR ("safe space to succeed or fail"). Faculty are practicing AAs who also precept. 21 years, 100% overall boards.</p>
+      <p><span class="k">Place.</span> Georgia was already the plan with Ri. Warm, coastal, real community. Memorial reaches 35 counties of rural SE Georgia.</p>
+      <p><span class="k">You.</span> The bridge for patients who can't advocate for themselves. A small class where faculty see you in the OR is where you grow fastest.</p>
+      <p class="m">Your cover letter line: "compassionately serving patients in their communities."</p>
+    </section>
+
+    <section class="card glass" style="animation-delay:.2s">
+      <h2><span class="n">04</span>The program in 30 seconds</h2>
+      <ul>
+        <li>MMSc Anesthesia Science · started <span class="k">2004</span> · 3rd AA program in the US (after Case Western, Emory)</li>
+        <li>9 quarters, June start, ~24 per class, no working</li>
+        <li>Short white coat at start of Q2 · comp exam end of Q5</li>
+        <li>Q6–9: ~1-month rotations, 1:1 preceptor, evenings/call possible</li>
+        <li><span class="k">97.6%</span> first-time pass · <span class="k">100%</span> jobs · 94.4% grad rate · ~$134K</li>
+        <li>People: <b>Kris Tindol</b> (director, CAA) · <b>Amy Scroggin</b> (asst. director, South '14) · <b>Anna Warren</b> (sim faculty)</li>
+      </ul>
+    </section>
+
+    <section class="card glass" style="animation-delay:.25s">
+      <h2><span class="n">05</span>Story bank · grab the first that fits</h2>
+      <div class="stories">
+        <div><b>1 · Phone call</b><span>Empathy, reading people → pre-op interview</span></div>
+        <div><b>2 · Companion</b><span>Conflict. Private, curious first. Safety speaks up now.</span></div>
+        <div><b>3 · Software crash</b><span>Pressure. Patients first, then the system.</span></div>
+        <div><b>4 · Avoided patient</b><span>Integrity only. Right channel, keep it short.</span></div>
+        <div><b>5 · Housing</b><span>No full info. "Act on what's certain."</span></div>
+        <div><b>6 · $200 deficit</b><span>Failure + weakness. Report fast → med errors, counts.</span></div>
+        <div><b>Anchor</b><span>Ephedrine: BP in the 70s, she held it, incision brought it back.</span></div>
+      </div>
+    </section>
+
+    <section class="card glass" style="animation-delay:.3s">
+      <h2><span class="n">06</span>Curveballs</h2>
+      <p class="quote"><b>"Accepted anywhere else?"</b> "Yes, Emory, and I'm grateful. I'm here because Savannah is genuinely one of my top choices, and I wanted to see it in person before my wife and I decide."</p>
+      <p><span class="k">Weakness.</span> Overwhelmed when too much piles up → mission finances → see it early, prep, delegate → "being prepared is what lets me stay calm."</p>
+      <p><span class="k">What you'd bring.</span> Calm under pressure (software crash) + making a group work (trained missionaries, 1,500-student activities).</p>
+    </section>
+
+    <section class="card glass" style="animation-delay:.35s">
+      <h2><span class="n">07</span>Your scouting questions</h2>
+      <div class="two">
+        <div><div class="eyebrow" style="margin-bottom:6px">Faculty</div><ul>
+          <li>Where did last year's seniors rotate? How many within driving distance?</li>
+          <li>How are rotations assigned? Can you request a region?</li>
+          <li>What's first-year clinical time week to week?</li>
+          <li>If it fits: has the acquisition changed anything for the AA program?</li>
+        </ul></div>
+        <div><div class="eyebrow" style="margin-bottom:6px">Students</div><ul>
+          <li>Normal first-quarter week?</li>
+          <li>Where do people live? Housing on away rotations?</li>
+          <li>Married students or kids? How's the support?</li>
+          <li>What surprised you? What would you do the summer before?</li>
+        </ul></div>
+      </div>
+    </section>
+
+    <section class="card glass" style="animation-delay:.4s">
+      <h2><span class="n">08</span>Know cold, don't volunteer</h2>
+      <ul>
+        <li>GPA <span class="k">3.94</span> · GRE <span class="k">164V / 161Q</span> (South wants &gt;50th, you're there)</li>
+        <li>1,800+ patient care hours · ~30 hrs CAA shadowing</li>
+        <li>Biochem now; calc + physics II done April, before June</li>
+        <li><b>Memorial:</b> region's only Level I trauma, ~600+ beds, children's hospital, Level III NICU, HCA, Mercer med school campus</li>
+        <li><b>Savannah:</b> Oglethorpe + Tomochichi 1733 · 22 squares · Sherman's "Christmas gift" 1864 · Davenport House → preservation · Girl Scouts 1912 · SCAD</li>
+      </ul>
+    </section>
+
+    <section class="card glass wide" style="animation-delay:.45s">
+      <h2><span class="n">09</span>Three things to carry</h2>
+      <div class="two">
+        <p class="quote"><b>Specific beats impressive.</b> Swap anything general for a moment: the ephedrine, the husband asking who the anesthesiologist was, the phone call.</p>
+        <p class="quote"><b>Bridge it back.</b> End on the job: vigilance, safety, the care team, the patient who can't speak for themselves.</p>
+        <p class="quote"><b>The whole day counts.</b> Memorial, lunch, trolley, students. Be kind to the other applicants. They're picking classmates.</p>
+        <p class="quote warn"><b>Don't:</b> use the propranolol hold detail · call the Aug 31 cases full dissections (sentinel node biopsy) · ask anything on their website · bring up the sale in the formal interview.</p>
+      </div>
+      <p class="m" style="margin-top:8px">After: catch names. Thank-you email to Kris (ktindol@southuniversity.edu) on the flight or tomorrow, with one specific moment from the day.</p>
+    </section>
+  </div>
+</div>
+<script>
+(function(){
+  var KEY="ipt-settings", s={};
+  try{s=JSON.parse(localStorage.getItem(KEY)||"{}")}catch(e){}
+  var VARS=["bg","surface","ink","muted","line","accent","accent-ink","accent-soft","shaky","okay","solid","shaky-soft","okay-soft","solid-soft"];
+  function H(x,s,l,a){return "hsl("+x+" "+s+"% "+l+"%"+(a?" / "+a+"%":"")+")"}
+  function cham(){
+    if(s.chamLock&&s.chamLock.v)return s.chamLock;
+    var h=Math.floor(Math.random()*360),acc=(h+120+Math.floor(Math.random()*110))%360,light=s.tone==="light"?true:s.tone==="dark"?false:Math.random()<.28;
+    return light?{scheme:"light",v:{bg:H(h,32,95),surface:H(h,42,99),ink:H(h,38,11),muted:H(h,14,42),line:H(h,22,83),accent:H(acc,66,37),"accent-ink":"#fff","accent-soft":H(acc,66,45,13),shaky:"hsl(8 72% 44%)",okay:"hsl(38 80% 36%)",solid:"hsl(150 55% 30%)","shaky-soft":"hsl(8 72% 50% / 13%)","okay-soft":"hsl(38 80% 45% / 15%)","solid-soft":"hsl(150 55% 40% / 14%)"}}
+      :{scheme:"dark",v:{bg:H(h,26,7),surface:H(h,22,12),ink:H(h,26,95),muted:H(h,14,66),line:H(h,18,21),accent:H(acc,74,63),"accent-ink":H(h,30,8),"accent-soft":H(acc,74,63,16),shaky:"hsl(4 82% 70%)",okay:"hsl(42 90% 62%)",solid:"hsl(150 60% 62%)","shaky-soft":"hsl(4 82% 70% / 15%)","okay-soft":"hsl(42 90% 62% / 15%)","solid-soft":"hsl(150 60% 62% / 15%)"}};
+  }
+  function apply(){
+    var t=s.theme||"midnight",r=document.documentElement;
+    VARS.forEach(function(k){r.style.removeProperty("--"+k)});r.style.colorScheme="";
+    if(t==="chameleon"){r.setAttribute("data-theme","midnight");var p=cham();VARS.forEach(function(k){r.style.setProperty("--"+k,p.v[k])});r.style.colorScheme=p.scheme}
+    else r.setAttribute("data-theme",t);
+    document.querySelectorAll(".themes button").forEach(function(b){b.setAttribute("aria-pressed",b.dataset.t===t?"true":"false")});
+    var m=document.getElementById("themeColorMeta");if(m)m.setAttribute("content",getComputedStyle(document.body).backgroundColor);
+  }
+  document.querySelectorAll(".themes button").forEach(function(b){b.addEventListener("click",function(){
+    if(s.theme===b.dataset.t&&b.dataset.t!=="chameleon")return;
+    s.theme=b.dataset.t;s.chamLock=null;try{localStorage.setItem(KEY,JSON.stringify(s))}catch(e){}apply();
+  })});
+  apply();
+})();
+</script>
+</body>
+</html>
